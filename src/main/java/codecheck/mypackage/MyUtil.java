@@ -1,4 +1,4 @@
-package mypackage;
+package codecheck.mypackage;
 
 import java.io.BufferedReader;
 import java.io.File;
