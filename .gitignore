@@ -13,3 +13,8 @@ hs_err_pid*
 
 target/
 node_modules/
+
+# Visual Studio Code files
+.settings/
+.project
+.classpath
