@@ -48,7 +48,6 @@ public class MyUtil {
             builder.append("Content-Disposition: form-data; name=\"imagefile\"; filename=\"" + imageFile + "\"" + EOL);
             builder.append("Content-Type: image/jpeg" + EOL);
             builder.append(EOL);
-            System.out.println(builder.toString());
 
             // 画像バイナリを一定サイズ読み取りつつサーバへのリクエストを開始
             out.writeBytes(builder.toString());
