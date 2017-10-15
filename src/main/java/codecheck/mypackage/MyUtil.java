@@ -33,6 +33,7 @@ public class MyUtil {
             File file = new File(imageFile);
             System.out.println(file);
             FileInputStream fis = new FileInputStream(file);
+            System.out.println(fis);
 
             // サーバへのリクエストの序盤を記述
             StringBuilder builder = new StringBuilder();
