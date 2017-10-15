@@ -31,8 +31,8 @@ public class MyUtil {
 
             // サーバへのリクエストの準備
             DataOutputStream out = new DataOutputStream(con.getOutputStream());
-            FileInputStream fis = new FileInputStream(file);
             File file = new File(imageFile);
+            FileInputStream fis = new FileInputStream(file);
 
             // サーバへのリクエストの序盤を記述
             StringBuilder builder = new StringBuilder();
