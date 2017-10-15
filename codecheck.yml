@@ -1,7 +1,7 @@
 build:
 - mvn package
 env:
-  APP_COMMAND: target/bin/theapp <%= ENV['API_KEY_INFLUENCE'] %>
+  APP_COMMAND: target/bin/theapp $API_KEY_INFLUENCE
 test:
   - mocha
   
