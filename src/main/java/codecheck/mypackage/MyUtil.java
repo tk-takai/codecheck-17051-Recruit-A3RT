@@ -48,7 +48,7 @@ public class MyUtil {
             builder.append(EOL);
 
             // 画像バイナリを一定サイズ読み取りつつサーバへのリクエストを開始
-            con.setChunkedStreamingMode(0);
+            //con.setChunkedStreamingMode(0);
             out.writeBytes(builder.toString());
             int bytesAvailable = fis.available();
             int maxBufferSize = 1 * 1024 * 1024;
