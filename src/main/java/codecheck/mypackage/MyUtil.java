@@ -70,16 +70,16 @@ public class MyUtil {
             out.close();
 
             // レスポンスを取得
-            if (con.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-                String tmp = "";
-                while ((tmp = in.readLine()) != null) {
-                    result += tmp;
-                }
-                in.close();
-            } else {
-                result = "Server Error";
+            //if (con.getResponseCode() == HttpURLConnection.HTTP_OK) {
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String tmp = "";
+            while ((tmp = in.readLine()) != null) {
+                result += tmp;
             }
+            in.close();
+            //} else {
+            //    result = "Server Error";
+            //}
         } catch (Exception e) {
             e.printStackTrace();
         }
