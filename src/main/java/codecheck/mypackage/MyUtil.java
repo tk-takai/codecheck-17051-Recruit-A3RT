@@ -26,11 +26,12 @@ public class MyUtil {
             con.setDoOutput(true);
             con.setRequestMethod("POST");
             con.setUseCaches(false);
-            //con.setChunkedStreamingMode(0);
+            con.setChunkedStreamingMode(0);
 
             // サーバへのリクエストの準備
             DataOutputStream out = new DataOutputStream(con.getOutputStream());
             File file = new File(imageFile);
+            System.out.println(file);
             FileInputStream fis = new FileInputStream(file);
 
             // サーバへのリクエストの序盤を記述
