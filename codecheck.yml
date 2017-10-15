@@ -3,3 +3,4 @@ build:
 env:
   APP_COMMAND: target/bin/theapp API_KEY_INFLUENCE
 test: mocha
+config: timeout 10000
